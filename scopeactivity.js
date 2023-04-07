@@ -18,7 +18,10 @@ function outer(){
     }
     console.log(a);
     console.log(b);
-    b.firstName = "forty"
+   b= {
+    firstName: "love",
+    middleName: "forty"
+   }
   
   }
 

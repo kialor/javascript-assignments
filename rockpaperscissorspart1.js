@@ -1,18 +1,16 @@
 let hands = ["rock", "paper", "scissors"];
 
 function getHand(hands) {
-  let returnHand = parseInt(Math.random(hands) * 10) % 3;
-  return hands;
+ return parseInt(Math.random(hands) * 10) % 3;
 }
 
 let playerOne = {
   name: "First player",
-  turn: getHand(hands),
-};
+  play: getHand(hands)}
 
 let playerTwo = {
   name: "Second player",
-  turn: getHand(hands),
+  play: getHand(hands),
 };
 
 function playRound(playerOne, playerTwo) {
@@ -23,12 +21,14 @@ function playRound(playerOne, playerTwo) {
     (firstplayer == hands[2] && secondplayer == hands[1]) ||
     (firstplayer == hands[1] && secondplayer == hands[0])
   ) {
+   // return hands
   console.log("player one wins using " + getHand(hands));
   } else if (
     (secondplayer == hands[0] && firstplayer == hands[2]) ||
     (secondplayer == hands[2] && firstplayer == hands[1]) ||
     (secondplayer == hands[1] && firstplayer == hands[0])
   ) {
+   // return hands
     console.log("player two wins using " + getHand(hands));
   } else if (
     (secondplayer == hands[0] && firstplayer == hands[0]) ||
@@ -39,5 +39,4 @@ function playRound(playerOne, playerTwo) {
     return null
   }
 }
-
 playRound(playerOne,playerTwo);

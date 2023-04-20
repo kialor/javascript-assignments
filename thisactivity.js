@@ -1,5 +1,5 @@
 let photoSlideShow = {
-  photoList: ["walking dog", "eating ice cream", "beach waves", "sunny field"],
+  photoList: ["walking dog-0", "eating ice cream-1", "beach waves-2", "sunny field-3"],
   currentPhotoIndex: 2,
 
   nextPhoto: function () {
@@ -27,5 +27,7 @@ let photoSlideShow = {
 
 console.log(photoSlideShow.getCurrentPhoto());
 photoSlideShow.nextPhoto();
+photoSlideShow.prevPhoto();
+photoSlideShow.prevPhoto();
 photoSlideShow.prevPhoto();
 photoSlideShow.prevPhoto();
